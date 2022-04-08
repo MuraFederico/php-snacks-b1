@@ -101,5 +101,27 @@
             ?>
         </ul>
     </section>
+
+
+    <section id="snack-4">
+        <?php
+            $para = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam reprehenderit minima voluptatum quod. Cum ipsum excepturi deleniti fugiat, ratione explicabo maxime optio dignissimos placeat quisquam, quia, autem similique consequatur laboriosam.
+            Alias praesentium eum enim omnis possimus voluptatibus quasi veniam a excepturi esse, ipsum corporis itaque quaerat quo numquam id deserunt perferendis at earum amet eius eveniet. Architecto sed officia sapiente.
+            Labore illo aspernatur blanditiis non! Rem consequuntur soluta libero suscipit ullam non, corporis quod fugiat id. Quas odio distinctio assumenda aperiam velit porro debitis necessitatibus facilis omnis quasi, nesciunt itaque.
+            Consequatur laboriosam sunt pariatur dicta quis nemo quaerat. Tempore dolorum nulla, laboriosam quos totam saepe sed quas ipsum corrupti rem ratione illum aperiam repellat, minima accusantium doloremque? Eligendi, repudiandae quae?
+            Eius corrupti omnis quas. Quas laborum similique ullam possimus ad velit, aliquam nobis. Dolorem recusandae natus numquam quibusdam error sit doloremque distinctio explicabo et quod, enim, minima nihil inventore blanditiis!';
+
+            $arr_para = explode('.', $para);
+        ?>
+        <h1>snack 4</h1>
+        <?php
+            echo "<h3>full paragraph:</h3> $para";
+            for ($_i=0; $_i < count($arr_para); $_i++) { 
+                echo '<h3> section ' . ($_i + 1) . '</h3>';
+                echo '<p>' . $arr_para[$_i] . '</p>';
+            };
+        ?>
+    </section>
 </body>
 </html>
+
