@@ -81,5 +81,25 @@
             }
         ?>
     </section>
+
+
+    <section id="snack-3">
+        <?php
+            $arr_random = [];
+            while (count($arr_random) < 15) {
+                $number = rand(0, 30);
+                if (!in_array($number, $arr_random)) {
+                    $arr_random[] = $number;
+                };
+            };
+        ?>
+        <h1>snack 3</h1>
+        <ul>
+            <?php for ($_i=0; $_i < count($arr_random); $_i++) { 
+               echo '<li>' . $arr_random[$_i] . '</li>';
+            };
+            ?>
+        </ul>
+    </section>
 </body>
 </html>
