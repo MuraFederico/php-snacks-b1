@@ -55,8 +55,31 @@
             ?>
         </ul>
     </section>
+
+
     <section id="snack-2">
-        
+        <?php
+            $name = $_GET['name'];
+            $mail = $_GET['mail'];
+            $age = $_GET['age'];
+        ?>
+        <h1>snack 2</h1>
+        <form action="" method="GET">
+            <label for="mail">mail</label>
+            <input type="text" name="mail" id="mail">
+            <label for="name">name</label>
+            <input type="text" name="name" id="name">
+            <label for="age">age</label>
+            <input type="text" name="age" id="age">
+            <button>send</button>
+        </form>
+        <?php 
+            if (strlen($name) > 3 && is_numeric($age) && preg_match('(@|.)', $mail) !== false) {
+               echo 'accesso riuscito';
+            }else {
+                echo 'accesso negato';
+            }
+        ?>
     </section>
 </body>
 </html>
