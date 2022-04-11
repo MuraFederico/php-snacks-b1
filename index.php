@@ -59,9 +59,9 @@
 
     <section id="snack-2">
         <?php
-            $name = $_GET['name'];
-            $mail = $_GET['mail'];
-            $age = $_GET['age'];
+            $name = $_GET['name'] ?? '';
+            $mail = $_GET['mail'] ?? '';
+            $age = $_GET['age'] ?? '';
         ?>
         <h1>snack 2</h1>
         <form action="" method="GET">
